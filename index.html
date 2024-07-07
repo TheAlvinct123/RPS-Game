@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> <!-- Sets the character encoding for the HTML document -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Ensures compatibility with Internet Explorer's edge mode -->
+        <meta name="viewport" content="width=device-width, initial scale=1.0"> <!-- Sets the viewport to make the website responsive on different devices -->
+        <link rel="stylesheet" href="style.css"> <!-- Links the external CSS stylesheet -->
+        <title>Rock Paper Scissors Game</title> <!-- Sets the title of the webpage -->
+
+        <style>
+        #gameScreen {
+            display: none;
+        }
+        </style>
+    </head>
+    <body>
+        <!-- Initial Screen before playing game-->
+        <div id="initialScreen">
+            <h1>Welcome to Rock Paper Scissors</h1>
+            <p>A simple game of to pass the time<br>Press "Get Started" to Play</p>
+            <button onclick="startGame()">Get Started</button>
+        </div>
+
+        <!-- Game Screen after clicking play -->
+        <div id="gameScreen">
+            <h1>Rock Paper Scissors</h1>
+            <p>Choose your move:</p>
+            <button class="choice-button" id="rockButton"> <img src="images/rock.png" alt="Rock"> </button>
+            <button class="choice-button" id="paperButton"> <img src="images/paper.png" alt="Paper"> </button>
+            <button class="choice-button" id="scissorsButton"> <img src="images/scissors.png" alt="Scissors"> </button>
+            <p id="result"></p>
+            <button class="quit-button" onclick="goBack()">Quit</button>
+        </div>
+        <script src="script.js"></script>   
+        
+    </body>
+</html>

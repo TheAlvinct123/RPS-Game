@@ -1,0 +1,105 @@
+*{
+    margin: 0;                                                  /* Resets the default margin for all elements */
+    padding: 0;                                                 /* Resets the default padding for all elements */
+    font-family: 'Arail', sans-serif;                           /* Sets the default font family for all elements to 'Poppins', with sans-serif as a fallback */
+    box-sizing: border-box;                                     /* Ensures that the padding and border are included in the element's total width and height */
+}
+
+body{
+    display: flex;    
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(90deg, #0047AB, #7DF9FF);
+}
+
+#initialScreen{
+    text-align: center;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+#initialScreen h1{
+    color: white;
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+#initialScreen p{
+    color: white;
+    font-size: 2em;
+    margin-bottom: 200px;
+}
+
+#initialScreen button{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3 ease;
+}
+
+#initialScreen button:hover{
+    opacity: .8;
+    transform: scale(1.05);
+}
+
+#gameScreen{
+    display: none;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#gameScreen h1{
+    color: white;
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+#gameScreen p{
+    color: white; 
+    font-size: 2em;
+    margin-bottom: 100px
+}
+
+.choice-button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.choice-button img{
+    width: 200px;
+    height: 200px;
+}
+
+.quit-button{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3 ease;
+}
+
+.quit-button:hover{
+    opacity: .8;
+    transform: scale(1.05);
+}
+
+#result {
+    font-size: 1em; /* Adjust font size */
+    font-weight: bold; /* Make text bold */
+    text-align: center; /* Center-align text */
+    margin: 20px 0; /* Add margin top and bottom */
+    padding: 10px; /* Add padding */
+}
